@@ -1,0 +1,88 @@
+/* Global Styles */
+
+/*Christmas Style*/
+/*:root {
+    --primary-bg: #004225;
+    --secondary-bg: #8B0000;
+    --header-bg: #8B0000;
+    --navbar-bg: linear-gradient(90deg, #006400, #004225);
+    --primary-text: #ffffff;
+    --secondary-text: #FFD700;
+    --accent-color: #FFD700;
+    --border-color: #8B0000;
+    --shadow-color: rgba(0, 0, 0, 0.7);
+    --transition-speed: 0.3s;
+    --button-bg: #8B0000;
+    --button-hover-bg: #FFD700;
+    --button-text: #ffffff;
+    --card-hover-bg: rgba(139, 0, 0, 0.1);
+    --header-gradient: linear-gradient(90deg, #8B0000, #004225);
+}*/
+
+/*Normal Style*/
+:root {
+    --primary-bg: #1a1a1a;
+    --secondary-bg: #222;
+    --header-bg: #111;
+    --navbar-bg: linear-gradient(90deg, #333, #111);
+    --primary-text: #f0f0f0;
+    --secondary-text: #aaa;
+    --accent-color: #ff3e3e;
+    --border-color: #555;
+    --shadow-color: rgba(0, 0, 0, 0.7);
+    --transition-speed: 0.3s;
+    --button-bg: #444;
+    --button-hover-bg: #ff3e3e;
+    --button-text: #fff;
+    --card-hover-bg: rgba(255, 62, 62, 0.1);
+    --header-gradient: linear-gradient(90deg, #111, #000);
+}
+
+@font-face {
+    font-family: scp;
+    src: url('../assets/VCR_OSD_MONO_1.001.ttf');
+}
+* {
+    font-family: scp;
+}
+body {
+    margin: 0px;
+}
+html, body {
+    cursor: url('../cursors/cursor.cur'), auto !important; 
+}
+button {
+    cursor: url('../cursors/link.cur'), auto !important; 
+}
+button:hover, .navbar a:hover {
+    opacity: 70%;
+    cursor: url('../cursors/link.cur'), auto !important; 
+}
+.card:hover {
+    cursor: url('../cursors/link.cur'), auto !important; 
+}
+button:active, .navbar a:hover {
+    opacity: 50%;
+    cursor: url('../cursors/link.cur'), auto !important; 
+}
+input[type="text"]:hover{
+    cursor: url('../cursors/text.cur'), text, auto !important; 
+}
+input[type="text"]:focus, textarea:focus {
+    cursor: url('../cursors/text.ani'), auto !important; 
+}
+body::selection {
+    cursor: url('../cursors/text.ani'), auto !important; 
+}
+body.busy {
+    cursor: url('../cursors/working.ani'), auto !important; 
+}
+section > ul > li {
+    list-style: disc;
+}
+a:hover{
+    cursor: url('../cursors/link.cur'), auto !important; 
+}
+.newspaper-img:hover{
+    cursor: url('../cursors/link.cur'), auto !important;
+}

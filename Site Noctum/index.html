@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/files/assets/styles/glitch.css">
+    <link rel="icon" type="image/x-icon" href="./pages/files/assets/assets/favicon.png">
+    <link rel="stylesheet" href="./pages/files/assets/styles/indexstyle.css">
+    <title>Device Redirect</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function redirectBasedOnDevice() {
+                function isMobileDevice() {
+                    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                }
+
+                const targetPage = isMobileDevice() ? "./pages/main.html" : "./pages/main.html";
+                const delay = Math.floor(Math.random() * (5000 - 3000 + 1)) + 3000;
+                setTimeout(() => {
+                    window.location.href = targetPage;
+                }, delay);
+            }
+
+            redirectBasedOnDevice();
+        });
+    </script>
+</head>
+<body>
+    <div class="loader">
+        <div data-glitch="Loading..." class="glitch">Loading...</div>
+    </div>
+    <div class="links">
+        <p>If you are not redirected automatically, please click the appropriate link below:</p>
+        <ul>
+            <li><a href="./pages/main.html">Mobile Version</a></li>
+            <li><a href="./pages/main.html">Desktop Version</a></li>
+        </ul>
+    </div>
+</body>
+</html>
