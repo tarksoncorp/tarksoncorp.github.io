@@ -1,9 +1,0 @@
-ul > li {
-    list-style: none;
-    color: white !important;
-}
-li > a {
-    color: red !important;
-    text-decoration: none;
-    font-weight: bold;
-}
