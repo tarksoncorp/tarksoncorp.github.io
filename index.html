@@ -1,213 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>James Parkhurst</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/my-avatar.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>James Parkhurst</title>
-  <link rel="shortcut icon" href="./assets/images/my-avatar.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <main>
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.jpg" alt="James Parkhurst" width="80">
-        </figure>
-        <div class="info-content">
-          <h1 class="name" title="James Parkhurst">James Parkhurst</h1>
-          <p class="title">College Student</p>
+  <body>
+    <div class="bg-animation">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div id="stars4"></div>
+    </div>
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.jpg"
+              alt="James Parkhurst"
+              width="80"
+            />
+          </figure>
+          <div class="info-content">
+            <h1 class="name" title="James Parkhurst">James Parkhurst</h1>
+            <p class="title">Junior Dev</p>
+          </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:jamesparkhurst@hotmail.com" class="contact-link">jamesparkhurst@hotmail.com</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+447411496655" class="contact-link">+44 7411 496655</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-              <time datetime="1982-06-23">June 22, 2007</time>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Burton upon Trent, Staffordshire, United Kingdom</address>
-            </div>
-          </li>
-        </ul>
-        <div class="separator"></div>
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.instagram.com/parkhurst.james07/" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://discord.com/users/971800495259795496" class="social-link">
-              <ion-icon name="logo-discord"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://github.com/foggydev-07" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-    <div class="main-content">
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Experiences</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-        </ul>
-      </nav>
-      <article class="about  active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-        <section class="about-text">
-          <p>
-            I am currently studying at Burton and South Derbyshire College for Level 3 Extended Diploma in Application
-            Development. I am planning on either doing an apprenticeship or going to university after, and I plan on
-            going into website development or software development.
-          </p>
-          <p>
-            I have been a tech nerd my whole life, I started coding in secondary school building basic python
-            applications, and more recently moved to website development and python bots.
-          </p>
-        </section>
-        <section class="service">
-          <h3 class="h3 service-title">What i'm doing</h3>
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Website development</h4>
-                <p class="service-item-text">
-                  Building professional websites that both look good and function well.
-                </p>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:jamesparkhurst@hotmail.com" class="contact-link"
+                  >jamesparkhurst@hotmail.com</a
+                >
               </div>
             </li>
-            <li class="service-item">
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Discord Development (Python)</h4>
-                <p class="service-item-text">
-                  Building advanced moderation and management bots to help servers manage their community.
-                </p>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+447411496655" class="contact-link"
+                  >+44 7411 496655</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+                <time datetime="1982-06-23">June 22, 2007</time>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>
+                  Burton upon Trent, Staffordshire, United Kingdom
+                </address>
               </div>
             </li>
           </ul>
-        </section>
-      </article>
-      <article class="experiences" data-page="experiences">
-        <header>
-          <h2 class="h2 article-title">My experience</h2>
-        </header>
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+          <div class="separator"></div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/parkhurst.james07/"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://discord.com/users/971800495259795496"
+                class="social-link"
+              >
+                <ion-icon name="logo-discord"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://github.com/foggydev-07" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Experiences</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+          </ul>
+        </nav>
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+          <section class="about-text">
+            <p>
+              Hey! I am an avid tech nerd, and I (debatably) enjoy developing.
+              Recently, I have been developing websites (such as this one) and
+              community management solutions. Some examples of my projects are
+              czOS, this portfolio, a fully interactive media server built from
+              scratch (no plex or any of that, entirely mine), all hosted on my
+              own home server. I'm not particularly endowed in the money
+              department, so I frankensteined an old desktop into a server. It
+              is currently running a Ryzen 5 5500, 32GB of memory, and 2TB of
+              storage (1 HDD, 1 nVME SSD). It runs a Proxmox VE, which on top is
+              running a few VMs, which on top of that is running my services.
+            </p>
+            <p>
+              I am open for work, and I wish to learn from you! I am skilled
+              mainly in Python, and I am intermediate in HTML, CSS, Javascript,
+              PHP, and Linux (specifically Ubuntu Server).
+            </p>
+          </section>
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Website development</h4>
+                  <p class="service-item-text">
+                    Building professional websites that function flawlessly and
+                    look amazing.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Community Mangement Solutions
+                  </h4>
+                  <p class="service-item-text">
+                    Building advanced Discord bots to support Moderators and
+                    Management with their day-to-day tasks.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Homelab</h4>
+                  <p class="service-item-text">
+                    Successfully deploying and maintaining a server, configuring
+                    networking, operating systems and applications.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article class="experiences" data-page="experiences">
+          <header>
+            <h2 class="h2 article-title">My experience</h2>
+          </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
             </div>
-            <h3 class="h3">Education</h3>
-          </div>
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Burton and South Derbyshire College</h4>
-              <span>2024-Current</span>
-              <p class="timeline-text">
-                Studying my second year at BSDC doing an Extended Diploma in Application Development.
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Burton and South Derbyshire College</h4>
-              <span>2023 - 2024</span>
-              <p class="timeline-text">
-                Studied Level 2 Public Services
-              </p>
-            </li>
-          </ol>
-        </section>
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Level 2 Public Services</h4>
+                <h2 class="h5 timeline-item-title">
+                  <i>Burton and South Derbyshire College</i>
+                </h2>
+                <span>2023 - 2024</span>
+                <p class="timeline-text">
+                  Not knowing what I wanted to do, I enrolled in Level 2 Public
+                  Services at BSDC, in which I gained valuable team working
+                  skills.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">GCSE</h4>
+                <h2 class="h5 timeline-item-title">
+                  <i>Blessed Robert Sutton Catholic Voluntary Academy</i>
+                </h2>
+                <span>2018 - 2023</span>
+                <p class="timeline-text">
+                  I studied various subjects at a GCSE level, including Computer
+                  Science, French, Religious Education, and Geography.
+                </p>
+              </li>
+            </ol>
+          </section>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Work History</h3>
             </div>
-            <h3 class="h3">Work History</h3>
-          </div>
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Kitchen Porter</h4>
-              <span>December 2024 - Current</span>
-              <p class="timeline-text">
-                I would ensure cleanliness around the Meynell Ingram Arms, and would also assist in cooking food for
-                customers.
-              </p>
-            </li>
-          </ol>
-        </section>
-      </article>
-      <article class="portfolio" data-page="portfolio">
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-        <section class="projects">
-          <ul class="project-list">
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <h3 class="project-title"><b>czOS</b></h3>
-              <p class="project-category" style="color: white;"><i>A community management bot designed to help automate
-                  certain tasks within a community.</i></p>
-              <p class="project-category">Discord Development</p>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <h3 class="project-title"><a href="https://pc-clinic.foggyzeus.com"><b>PC Clinic</b></a></h3>
-              <p class="project-category" style="color: white;"><i>The first website I developed as part of a college assignment.</i></p>
-              <p class="project-category">Website Development</p>
-            </li>
-            
-    </div>
-  </main>
-  <script src="./assets/js/script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Kitchen Porter</h4>
+                <h2 class="h5 timeline-item-title">
+                  <i>The Meynell Ingram Arms - Redcat Pub Company</i>
+                </h2>
+                <span>December 2024 - Nov 2025</span>
+                <p class="timeline-text">
+                  A dedicated Kitchen Porter responsible for keeping the
+                  kitchen's cleanliness to an impeccable degree, successfully
+                  handling an incredibly fast paced work environment and
+                  ensuring Chefs always had required equipment.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Volunteer</h4>
+                <h2 class="h5 timeline-item-title"><i>YMCA Burton</i></h2>
+                <span>December 2024 - Nov 2025</span>
+                <p class="timeline-text">
+                  For a period I volunteered at YMCA Burton's furniture store. I
+                  learned some valuable retail skills.
+                </p>
+              </li>
+            </ol>
+          </section>
+        </article>
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+          <section class="projects">
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <h3 class="project-title"><b>czOS</b></h3>
+                <p class="project-category" style="color: white">
+                  An advanced community management Discord bot to assist
+                  Moderators and Management staff with their day-to-day tasks,
+                  with some additional fun features such as an economy system.
+                </p>
+                <p class="project-category">Python</p>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <h3 class="project-title">
+                  <b>sh*tty file portal 9000 (name pending rethink)</b>
+                </h3>
+                <p class="project-category" style="color: white">
+                  A cloud server built from scratch, with ShareX integration to
+                  allow for a custom screenshot link and storage. It features
+                  Google OAuth Login (Allowing for administrative access for
+                  certain accounts), file renaming, file deletion, conversion
+                  between .gif, .jpg, .png and .webp, bulk selection (for
+                  deleting), a drag and drop (or click) upload portal, and a
+                  sorting system between newest/oldest. I also created an
+                  Electron application allowing for the portal to be used as a
+                  desktop app.
+                </p>
+                <p class="project-category">PHP / Networking / Homelab</p>
+              </li>
+                            <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <h3 class="project-title">
+                  <b>Homelab</b>
+                </h3>
+                <p class="project-category" style="color: white">
+                  A frankensteined desktop computer running Proxmox VE. I use multiple VMs running Ubuntu Server, which in turn run various services, such as NGINX, czOS, and Nextcloud. It is running an AMD Ryzen 5 5500, 32GB of memory, and 2TB of storage.
+                </p>
+                <p class="project-category">Networking / Homelab / Linux</p>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
